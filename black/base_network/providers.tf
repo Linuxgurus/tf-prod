@@ -10,6 +10,6 @@ terraform {
 
 
 provider "aws" {
-  region = module.cloud.info.region
-  profile = module.cloud.info.aws_profile
+  region = module.naming.env.region
+  profile = module.naming.env.aws_profile
 }
